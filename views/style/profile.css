@@ -1,0 +1,132 @@
+.profile-photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+.profile-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.btn-upload{
+    background-color: rgb(1, 59, 1);
+    height: fit-content !important;
+    border-radius: 100px;
+}
+.name-heading{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.heading-profile-text{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.heading-profile-text-two{
+    font-size: 0.8rem;
+    font-weight: light;
+}
+
+
+
+
+/* modals */
+body .modal-sections{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.205);
+    top: 0%;
+}
+.modal-sections .modals{
+    width: 40%;
+    height: fit-content;
+    background-color: black;
+    top: 10%;
+    left: 30%;
+    border-radius: 10px;
+}
+@media(max-width:900px){
+    .modal-sections .modals{
+        width: 60% !important;
+        height: fit-content;
+        background-color: black;
+        top: 20%;
+        left: 20%;
+        border-radius: 10px;
+    }
+}
+@media(max-width:500px){
+    .modal-sections .modals{
+        width: 90% !important;
+        height: fit-content;
+        background-color: black;
+        top: 10%;
+        left: 5%;
+        border-radius: 10px;
+    }
+    .network-providers{
+        width: 70px !important;
+        height: 70px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color:rgb(66, 65, 65);
+    }
+}
+.modal-heading{
+    font-size: 1.5rem !important;
+    font-weight: bold;
+}
+.form-control{
+    background-color: rgb(66, 65, 65) !important;
+    color: white !important;
+    border: none !important;
+}
+.form-control:focus{
+    background-color: rgb(66, 65, 65) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.form-control::placeholder{
+    color: rgba(255, 255, 255, 0.562) !important;
+}
+.network-providers{
+    width: 90px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:rgb(66, 65, 65);
+}
+.network-providers img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn-submit{
+    background-color: rgba(7, 186, 7, 0.406) !important;
+}
+
+
+.chat-image{
+    width: 100px;
+    height: 100px;
+}
+.chat-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social-media-img{
+    width: 50px;
+    height: 50px;
+}
+.social-media-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-for-social-media{
+    background-color: rgba(26, 26, 26, 0.806);
+    border-radius: 10px;
+}

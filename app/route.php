@@ -16,7 +16,7 @@ class Route
                 require_once("controller/$controller.php");
                 $controller = new $controller;
                 $controller->$action($path,$_POST);
-                exit()
+                exit();
             }
         }
     }
