@@ -121,5 +121,3 @@ education.addEventListener("click", ()=>{
 });
 
 
-
-  

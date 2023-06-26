@@ -13,10 +13,24 @@ class Route
             $parent="/BACKEND_VTU";
             $pattern='#^'.$parent.$path.'$#siD';
             if(preg_match($pattern,$current_URI)){
-                require_once("controller/$controller.php");
-                $controller = new $controller;
-                $controller->$action($path,$_POST);
-                exit();
+                if($path==="/login" && $method==='POST'){
+                    require_once "$controller.php";
+                    $controller = new $controller;
+                    $controller->$action($path, $_POST);
+
+                    exit();
+                }elseif ($path==="/logout" && $method==='GET') {
+                    require_once "$controller.php";
+                    $controller = new $controller;
+                    $controller->$action($path, $_POST);
+
+                    exit();
+                }else{
+                    require_once("controller/$controller.php");
+                    $controller = new $controller;
+                    $controller->$action($path,$_POST);
+                    exit();
+                }
             }
         }
     }
@@ -29,7 +43,7 @@ class Route
 
     public static function post($path="", $controller="", $action="")
     {
-        return self::handle('post',$path,$controller,$action);
+        return self::handle('POST',$path,$controller,$action);
     }
 
 }

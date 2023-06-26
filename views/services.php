@@ -90,18 +90,19 @@
                     <input type="number" class="form-control py-3" placeholder="Enter Your Phone Number">
 
                     <label for="" class="text-light opacity-50 mt-2">Service Provider</label>
+                    <input type="text" id="network_type">
                     <div class="d-flex justify-content-between">
                         <div class="network-providers">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwdKrDXNqeQDc6nF7htd1ppchf4w7FdzZ1KMpEDbpUw&s" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwdKrDXNqeQDc6nF7htd1ppchf4w7FdzZ1KMpEDbpUw&s" id="airtel_click" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/mtn.png" alt="">
+                            <img src="https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/mtn.png" id="mtn_click" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://nigerianguide.com.ng/wp-content/uploads/2019/11/wp-1483041434766.jpg" alt="">
+                            <img src="https://nigerianguide.com.ng/wp-content/uploads/2019/11/wp-1483041434766.jpg" id="glo_click" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://www.seekpng.com/png/detail/344-3443327_9mobile-mtn-glo-airtel-and-9mobile.png" alt="">
+                            <img src="https://www.seekpng.com/png/detail/344-3443327_9mobile-mtn-glo-airtel-and-9mobile.png" id="9mobile_click" alt="">
                         </div>
                     </div>
 
@@ -123,18 +124,19 @@
                 </div>
                 <form action="" class="mt-3 pb-4">
                     <label for="" class="text-light opacity-50 mt-2">Service Provider</label>
+                    <input type="text" id="network_type_data">
                     <div class="d-flex justify-content-between">
                         <div class="network-providers">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwdKrDXNqeQDc6nF7htd1ppchf4w7FdzZ1KMpEDbpUw&s" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwdKrDXNqeQDc6nF7htd1ppchf4w7FdzZ1KMpEDbpUw&s" id="airtel_click_data" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/mtn.png" alt="">
+                            <img src="https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/mtn.png" id="mtn_click_data" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://nigerianguide.com.ng/wp-content/uploads/2019/11/wp-1483041434766.jpg" alt="">
+                            <img src="https://nigerianguide.com.ng/wp-content/uploads/2019/11/wp-1483041434766.jpg" id="glo_click_data" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://www.seekpng.com/png/detail/344-3443327_9mobile-mtn-glo-airtel-and-9mobile.png" alt="">
+                            <img src="https://www.seekpng.com/png/detail/344-3443327_9mobile-mtn-glo-airtel-and-9mobile.png" id="9mobile_click_data" alt="">
                         </div>
                     </div>
 
@@ -164,18 +166,19 @@
                 </div>
                 <form action="" class="mt-3 pb-4">
                     <label for="" class="text-light opacity-50 mt-2">Service Provider</label>
+                    <input type="text" id="cable_type">
                     <div class="d-flex justify-content-between">
                         <div class="network-providers">
-                            <img src="https://cdn.punchng.com/wp-content/uploads/2016/04/04214509/DStv-logo.jpg" alt="">
+                            <img src="https://cdn.punchng.com/wp-content/uploads/2016/04/04214509/DStv-logo.jpg" id="dstv_click" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://assets.sunnewsonline.com/2021/05/GOtv-1.jpg" alt="">
+                            <img src="https://assets.sunnewsonline.com/2021/05/GOtv-1.jpg" id="gotv_click" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://cdn.punchng.com/wp-content/uploads/2016/07/10202202/startimes-logo.jpg" alt="">
+                            <img src="https://cdn.punchng.com/wp-content/uploads/2016/07/10202202/startimes-logo.jpg" id="startimes_click" alt="">
                         </div>
                         <div class="network-providers">
-                            <img src="https://cdn.vanguardngr.com/wp-content/uploads/2022/09/showmax.png" alt="">
+                            <img src="https://cdn.vanguardngr.com/wp-content/uploads/2022/09/showmax.png" id="showmax_click" alt="">
                         </div>
                     </div>
 
@@ -198,7 +201,7 @@
             <div class="d-block px-lg-5 px-md-5 px-4 py-4">
                 <div class="d-flex justify-content-between align-items-center" style="width: 60%;">
                     <i class="fa-solid fa-circle-chevron-left text-light m-0" style="font-size: 1.5rem;"></i>
-                    <p class="modal-heading text-light m-0">Cable Tv</p>
+                    <p class="modal-heading text-light m-0">Electricity</p>
                 </div>
                 <form action="" class="mt-3 pb-4">
 
@@ -242,5 +245,121 @@
 
 
     <script src="views/functions/index.js"></script>
+    <script>
+        // for the forms , network select
+        let mtnClick = document.getElementById("mtn_click");
+        let airtelClick = document.getElementById("airtel_click");
+        let gloClick = document.getElementById("glo_click");
+        let mobileClick = document.getElementById("9mobile_click");
+        let network_type = document.getElementById("network_type")
+
+
+        mtnClick.addEventListener("click", ()=>{
+            mtnClick.parentNode.style="border:3px solid green;";
+            gloClick.parentNode.style="border:none;";
+            mobileClick.parentNode.style="border:none;";
+            airtelClick.parentNode.style="border:none;";
+            network_type.value=1;
+        });
+        airtelClick.addEventListener("click", ()=>{
+            mtnClick.parentNode.style="border:none;";
+            gloClick.parentNode.style="border:none;";
+            mobileClick.parentNode.style="border:none;";
+            airtelClick.parentNode.style="border:3px solid green;";
+            network_type.value=2;
+        });
+        gloClick.addEventListener("click", ()=>{
+            mtnClick.parentNode.style="border:none;";
+            airtelClick.parentNode.style="border:none;";
+            mobileClick.parentNode.style="border:none;";
+            gloClick.parentNode.style="border:3px solid green;";
+            network_type.value=3;
+        });
+        mobileClick.addEventListener("click", ()=>{
+            mtnClick.parentNode.style="border:none;";
+            airtelClick.parentNode.style="border:none;";
+            gloClick.parentNode.style="border:none;";
+            mobileClick.parentNode.style="border:3px solid green;";
+            network_type.value=4;
+        });
+
+
+
+        // for the forms , network select for the data aspect
+        let mtnClickData = document.getElementById("mtn_click_data");
+        let airtelClickData = document.getElementById("airtel_click_data");
+        let gloClickData = document.getElementById("glo_click_data");
+        let mobileClickData = document.getElementById("9mobile_click_data");
+        let network_typeData = document.getElementById("network_type_data")
+
+
+        mtnClickData.addEventListener("click", ()=>{
+            mtnClickData.parentNode.style="border:3px solid green;";
+            gloClickData.parentNode.style="border:none;";
+            mobileClickData.parentNode.style="border:none;";
+            airtelClickData.parentNode.style="border:none;";
+            network_typeData.value=1;
+        });
+        airtelClickData.addEventListener("click", ()=>{
+            mtnClickData.parentNode.style="border:none;";
+            gloClickData.parentNode.style="border:none;";
+            mobileClickData.parentNode.style="border:none;";
+            airtelClickData.parentNode.style="border:3px solid green;";
+            network_typeData.value=2;
+        });
+        gloClickData.addEventListener("click", ()=>{
+            mtnClickData.parentNode.style="border:none;";
+            airtelClickData.parentNode.style="border:none;";
+            mobileClickData.parentNode.style="border:none;";
+            gloClickData.parentNode.style="border:3px solid green;";
+            network_typeData.value=3;
+        });
+        mobileClickData.addEventListener("click", ()=>{
+            mtnClickData.parentNode.style="border:none;";
+            airtelClickData.parentNode.style="border:none;";
+            gloClickData.parentNode.style="border:none;";
+            mobileClickData.parentNode.style="border:3px solid green;";
+            network_typeData.value=4;
+        });
+
+
+
+        // for the forms , tv subscription aspect select
+        let dstv_click = document.getElementById("dstv_click");
+        let gotv_click = document.getElementById("gotv_click");
+        let startimes_click = document.getElementById("startimes_click");
+        let showmax_click = document.getElementById("showmax_click");
+        let cable_type = document.getElementById("cable_type")
+
+
+        dstv_click.addEventListener("click", ()=>{
+            dstv_click.parentNode.style="border:3px solid green;";
+            startimes_click.parentNode.style="border:none;";
+            showmax_click.parentNode.style="border:none;";
+            gotv_click.parentNode.style="border:none;";
+            cable_type.value=1;
+        });
+        gotv_click.addEventListener("click", ()=>{
+            dstv_click.parentNode.style="border:none;";
+            startimes_click.parentNode.style="border:none;";
+            showmax_click.parentNode.style="border:none;";
+            gotv_click.parentNode.style="border:3px solid green;";
+            cable_type.value=2;
+        });
+        startimes_click.addEventListener("click", ()=>{
+            dstv_click.parentNode.style="border:none;";
+            gotv_click.parentNode.style="border:none;";
+            showmax_click.parentNode.style="border:none;";
+            startimes_click.parentNode.style="border:3px solid green;";
+            cable_type.value=3;
+        });
+        showmax_click.addEventListener("click", ()=>{
+            dstv_click.parentNode.style="border:none;";
+            gotv_click.parentNode.style="border:none;";
+            startimes_click.parentNode.style="border:none;";
+            showmax_click.parentNode.style="border:3px solid green;";
+            cable_type.value=4;
+        });
+    </script>
 </body>
 </html>

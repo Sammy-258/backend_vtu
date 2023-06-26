@@ -24,7 +24,7 @@
             </div>
 
 
-            <a href="" class="logout-link">Logout</a>
+            <a href="logout" class="logout-link">Logout</a>
         </section>
 
 
@@ -96,7 +96,7 @@
                         
                     </div>
                     <div class="col-lg-6 col-md-6 col-12">
-                        <div class="d-flex justify-content-between align-items-center">
+                        <a href="logout" class="d-flex justify-content-between align-items-center" style="text-decoration:none;color:black;">
                             <div class="d-flex align-items-center m-0">
                                 <div class="icon m-0">
                                     <i class="fa-solid fa-right-from-bracket" style="font-size: 2rem !important;padding: 0.7rem;background-color:  rgba(200, 13, 13, 0.774);color: rgb(32, 1, 1);border-radius: 100px;"></i>
@@ -108,7 +108,7 @@
                                 </div>
                             </div>
                             <i class="fa-solid fa-chevron-right m-0" style="font-size: 1.5rem;"></i>
-                        </div>
+                        </a>
                         
                     </div>
                 </div>
