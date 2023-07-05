@@ -29,7 +29,7 @@
             </div>
 
 
-            <a href="" class="logout-link">Logout</a>
+            <a href="logout" class="logout-link">Logout</a>
         </section>
         <section class="second-section">
             <div class="container px-4 small-bootom">

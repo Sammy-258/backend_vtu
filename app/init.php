@@ -13,6 +13,9 @@ Route::get("/logout","controller","logout");
 
 
 Route::post("/login", "controller", "login");
+Route::post("/airtime", "PostController", "airtime");
+Route::post("/data", "PostController", "data");
+Route::post("/verifyIuc", "PostController", "verifyIuc");
 
 
 header("HTTP/1.0 404 Not Found");
